@@ -55,11 +55,11 @@ function plugin_grouptaskmandatory_check_group($item)
 
     if (empty($groupIdTech) && empty($groupId)) {
         // As requested, we ONLY show the toast message and do NOT block the save operation
-        // Message is forced in Spanish as requested.
+        // Message is forced in Spanish and starts with 'AVISO:' while keeping ERROR level for red color.
         Session::addMessageAfterRedirect(
             'El campo Grupo es obligatorio para las tareas.',
             false,
-            ERROR
+            WARNING
         );
     }
 }

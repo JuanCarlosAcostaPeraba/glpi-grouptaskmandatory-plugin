@@ -1,0 +1,88 @@
+<root>
+	<name>Mandatory Group Task</name>
+	<key>grouptaskmandatory</key>
+
+	<!-- stable | unstable | beta | alpha -->
+	<state>stable</state>
+
+	<!-- 40x40px or bigger. Marketplace will resize it. -->
+	<logo>https://raw.githubusercontent.com/JuanCarlosAcostaPeraba/glpi-grouptaskmandatory-plugin/main/assets/logo.png</logo>
+
+	<description>
+		<short>
+			<en>Make the Group field mandatory for tasks in GLPI.</en>
+			<es_ES>Haz obligatorio el campo Grupo en las tareas de GLPI.</es_ES>
+		</short>
+		<long>
+			<en><![CDATA[
+**Mandatory Group Task** ensures that every task created or updated in GLPI (Tickets, Changes, Problems) has a technical group assigned.
+
+Key features:
+
+- **Enforces task accountability** - Prevents saving tasks without a group
+- **Automatic validation** - Works for TicketTask, ChangeTask, and ProblemTask
+- **User-friendly notifications** - Shows a clear error message when the group is missing
+- **Multi-language support** - English and Spanish supported
+
+This plugin helps maintain data quality and ensures that tasks are always assigned to a team.
+			]]></en>
+
+			<es_ES><![CDATA[
+**Mandatory Group Task** asegura que cada tarea creada o actualizada en GLPI (Tickets, Cambios, Problemas) tenga un grupo técnico asignado.
+
+Características principales:
+
+- **Obliga a la responsabilidad** - Evita guardar tareas sin un grupo asignado
+- **Validación automática** - Funciona para TicketTask, ChangeTask y ProblemTask
+- **Notificaciones amigables** - Muestra un mensaje de error claro cuando falta el grupo
+- **Soporte multiidioma** - Inglés y español disponibles
+
+Este plugin ayuda a mantener la calidad de los datos y asegura que las tareas estén siempre asignadas a un equipo.
+			]]></es_ES>
+		</long>
+	</description>
+
+	<homepage>https://github.com/JuanCarlosAcostaPeraba/glpi-grouptaskmandatory-plugin</homepage>
+
+	<download>https://github.com/JuanCarlosAcostaPeraba/glpi-grouptaskmandatory-plugin/releases</download>
+
+	<issues>https://github.com/JuanCarlosAcostaPeraba/glpi-grouptaskmandatory-plugin/issues</issues>
+
+	<readme>https://raw.githubusercontent.com/JuanCarlosAcostaPeraba/glpi-grouptaskmandatory-plugin/main/README.md</readme>
+
+	<authors>
+		<author>Juan Carlos Acosta Perabá</author>
+	</authors>
+
+	<versions>
+		<version>
+			<num>1.0.0</num>
+			<compatibility>~11.0.0</compatibility>
+		</version>
+	</versions>
+
+	<langs>
+		<lang>en_GB</lang>
+		<lang>es_ES</lang>
+	</langs>
+
+	<license>GPL v2+</license>
+
+	<tags>
+		<en>
+			<tag>tasks</tag>
+			<tag>mandatory</tag>
+			<tag>group</tag>
+			<tag>validation</tag>
+			<tag>tickets</tag>
+		</en>
+		<es_ES>
+			<tag>tareas</tag>
+			<tag>obligatorio</tag>
+			<tag>grupo</tag>
+			<tag>validación</tag>
+			<tag>tickets</tag>
+		</es_ES>
+	</tags>
+
+</root>

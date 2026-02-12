@@ -44,17 +44,11 @@ function plugin_init_grouptaskmandatory()
 
     if (Plugin::isPluginActive('grouptaskmandatory')) {
         $PLUGIN_HOOKS['pre_item_add']['grouptaskmandatory'] = [
-            'TicketTask' => 'plugin_grouptaskmandatory_pre_item_add_task',
-            'ChangeTask' => 'plugin_grouptaskmandatory_pre_item_add_task',
-            'ProblemTask' => 'plugin_grouptaskmandatory_pre_item_add_task',
-            'ProjectTask' => 'plugin_grouptaskmandatory_pre_item_add_task'
+            'TicketTask' => 'plugin_grouptaskmandatory_pre_item_add_task'
         ];
 
         $PLUGIN_HOOKS['pre_item_update']['grouptaskmandatory'] = [
-            'TicketTask' => 'plugin_grouptaskmandatory_pre_item_update_task',
-            'ChangeTask' => 'plugin_grouptaskmandatory_pre_item_update_task',
-            'ProblemTask' => 'plugin_grouptaskmandatory_pre_item_update_task',
-            'ProjectTask' => 'plugin_grouptaskmandatory_pre_item_update_task'
+            'TicketTask' => 'plugin_grouptaskmandatory_pre_item_update_task'
         ];
     }
 }

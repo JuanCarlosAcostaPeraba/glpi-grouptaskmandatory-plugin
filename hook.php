@@ -48,6 +48,11 @@ function plugin_grouptaskmandatory_pre_item_update_task($item)
  */
 function plugin_grouptaskmandatory_check_group($item)
 {
+    // Restrict this check only to TicketTask as requested.
+    if ($item->getType() !== 'TicketTask') {
+        return;
+    }
+
     // The field name in GLPI tasks for the technical group is groups_id_tech.
     // However, we check several common naming variations to be absolutely sure.
     $groupIdTech = $item->input['groups_id_tech'] ?? $item->input['_groups_id_tech'] ?? 0;
